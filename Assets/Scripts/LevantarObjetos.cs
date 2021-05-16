@@ -34,8 +34,8 @@ public class LevantarObjetos : MonoBehaviour
     {
         this.gameObject.GetComponent<DemoPlayerController>().enabled = false;
         this.gameObject.GetComponent<MOVER>().enabled = false;
-        this.gameObject.GetComponent<Descendify>().resetCounter();
-        this.gameObject.GetComponent<Descendify>().enabled = false;
+        this.gameObject.GetComponent<Gaze>().resetCounter();
+        this.gameObject.GetComponent<Gaze>().enabled = false;
         selectedObject.gameObject.GetComponent<Portal>().ActivarSala();
         transform.position = selectedObject.gameObject.GetComponent<Portal>().PosicionTeletransportacion();
 

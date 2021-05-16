@@ -10,7 +10,7 @@ public class ObjetoSeleccionado : MonoBehaviour
     public string fraseFaltaAlgo;
     public string fraseFinal;
     public string fraseExtra;
-    public Descendify jugador;
+    public Gaze jugador;
     public bool condicion = false;
     public GameObject ojoVisto;
     public bool tengoOjo = false;
@@ -56,7 +56,7 @@ public class ObjetoSeleccionado : MonoBehaviour
     }
 
     public void FuiSeleccionado() {
-        jugador.RecibirReferenciado(this);
+      //  jugador.RecibirReferenciado(this);
     }
 
     public bool EstadoCondicion() {

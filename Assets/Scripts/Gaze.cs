@@ -1,0 +1,84 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Gaze : MonoBehaviour
+{
+    public Animator animacion;
+    public float myTime = 0f;
+    public Transform radialPorgress;
+    public LevantarObjetos levantarObjetos;
+    public bool gazeTimerUp = false;
+    public GameObject text;
+    Interactable seenObject;
+    bool robotHablando = false;
+    int interactableLayer = 8;
+    [SerializeField]FoxController fox;
+
+    void Start()
+    {
+        animacion = GetComponent<Animator>();
+        radialPorgress.GetComponent<Image>().fillAmount = myTime;
+    }
+
+    void Update()
+    {
+        if (!robotHablando)
+        {
+            myTime += Time.deltaTime;
+            radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
+            if (myTime >= 2f && !gazeTimerUp)
+            {
+                Interact();
+                levantarObjetos.AnimarRobot();
+            }
+        }
+    }
+
+    public void RobotHabla()
+    {
+        robotHablando = !robotHablando;
+    }
+    public void resetCounter()
+    {
+        gazeTimerUp = false;
+        myTime = 0f;
+        radialPorgress.GetComponent<Image>().fillAmount = myTime;
+    }
+    public void Interact()
+    {
+        gazeTimerUp = true;
+
+        if (seenObject.gameObject.layer == interactableLayer)
+        {
+            seenObject.Interact();
+            fox.ObjectSeen(seenObject.gameObject);
+        }
+        /*if (objetoObservado.gameObject.name == "Portal")
+        {
+            if (!objetoObservado.GetComponent<Portal>().posicionarObjeto) { 
+            levantarObjetos.SoltarEnPortales();
+            }
+            levantarObjetos.PasarPortal();
+        }
+        else { 
+        if (!levantarObjetos.carrying)
+        {
+            levantarObjetos.pickup();
+        }
+            else {
+                    if(objetoObservado.tag == "Objetivo" || objetoObservado.tag == "ComputadoraHopper") { 
+                levantarObjetos.Seleccionarlo();
+                levantarObjetos.dropObject();
+                    }
+                    else { levantarObjetos.pickup(); }
+            }
+        }*/
+    }
+
+    public void ObjectSeen(Interactable selectedInteractable)
+    {
+        seenObject = selectedInteractable;
+    }
+}

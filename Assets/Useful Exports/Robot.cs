@@ -13,7 +13,7 @@ public class Robot : MonoBehaviour
     Quaternion inicial;
     int primerPalabra = 0;
     bool onlyOnce = false;
-    public Descendify jugador;
+    public Gaze jugador;
     public bool terminoComienzo;
 
     void Start()

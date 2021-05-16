@@ -33,7 +33,7 @@ public class GameManagerScript : MonoBehaviour
 
     public bool EstadoJugador()
     {
-        if (jugador.GetComponent<Descendify>().gazeTimerUp)
+        if (jugador.GetComponent<Gaze>().gazeTimerUp)
         {
             return true;
         }
