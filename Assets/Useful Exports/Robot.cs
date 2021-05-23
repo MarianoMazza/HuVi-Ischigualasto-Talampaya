@@ -23,7 +23,7 @@ public class Robot : MonoBehaviour
 
     public void RobotHabla()
     {
-        jugador.RobotHabla();
+        //jugador.RobotHabla();
     }
     public void AnularPalabra()
     {

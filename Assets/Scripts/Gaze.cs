@@ -12,7 +12,6 @@ public class Gaze : MonoBehaviour
     public bool gazeTimerUp = false;
     public GameObject text;
     Interactable seenObject;
-    bool robotHablando = false;
     int interactableLayer = 8;
     [SerializeField]FoxController fox;
 
@@ -24,22 +23,15 @@ public class Gaze : MonoBehaviour
 
     void Update()
     {
-        if (!robotHablando)
-        {
-            myTime += Time.deltaTime;
+             myTime += Time.deltaTime;
             radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
             if (myTime >= 2f && !gazeTimerUp)
             {
                 Interact();
                 levantarObjetos.AnimarRobot();
             }
-        }
     }
 
-    public void RobotHabla()
-    {
-        robotHablando = !robotHablando;
-    }
     public void resetCounter()
     {
         gazeTimerUp = false;
