@@ -12,6 +12,7 @@ public class MOVER : MonoBehaviour
     public GameObject inicio;
     public GameObject camera;
     public Camera mainCamera;
+    public float minimumRotationX;
     int cont = 0;
     public KeyCode noController;
     float velocidad = 0.2f;
@@ -84,7 +85,7 @@ public class MOVER : MonoBehaviour
         float rotationY = rotation.y;
         //Debug.Log(camera.transform.rotation.x);
         //Debug.Log(rotationX);
-        if (rotationX >= 43 && rotationX < 200)
+        if (rotationX >= minimumRotationX && rotationX < 200)
         {
             vel.y -= gravity;
             controller.Move(vel * Time.deltaTime);
