@@ -11,4 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: 3d923a10f70ff97499531562d8a0f635
+  - enabled: 1
+    path: Assets/Scenes/Talampaya/TalampayaIntro.unity
+    guid: 05c8552807fc2b94e8c118b2dcfdee0b
+  - enabled: 1
+    path: Assets/Scenes/Talampaya/TalampayaCanyon2.unity
+    guid: 22966ec484febbf44ad419a215ded33c
+  - enabled: 1
+    path: Assets/Scenes/Talampaya/TalampayaGarden.unity
+    guid: 43a6bab1ebe0edc41b983e71affda26e
+  - enabled: 1
+    path: Assets/Scenes/Talampaya/TalampayaMonk.unity
+    guid: 728a73633738cbf48aae78ba438c3c0c
+  - enabled: 1
+    path: Assets/Scenes/Ischigualasto/IschigualastoIntro.unity
+    guid: c46056e829c6e6f4fbc6779b30c50a92
+  - enabled: 1
+    path: Assets/Scenes/Ischigualasto/IschigualastoShapes.unity
+    guid: c089ffc69d915ad4db92ba8d8ca0a88a
+  - enabled: 1
+    path: Assets/Scenes/Ischigualasto/IschigualastoMuseum.unity
+    guid: 8d6e70abf15ba9f4ea762b803f6d81df
   m_configObjects: {}
