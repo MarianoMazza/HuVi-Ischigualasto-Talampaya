@@ -8,6 +8,9 @@ TagManager:
   - SignPosition
   - WindStart
   - Protection
+  - ThiefStart
+  - DinosaurStart
+  - Objective
   layers:
   - Default
   - TransparentFX

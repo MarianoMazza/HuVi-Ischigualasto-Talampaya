@@ -1296,6 +1296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620822576}
   - component: {fileID: 620822577}
+  - component: {fileID: 620822578}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1329,7 +1330,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a250e4faa11b02c4cbed9358de5163ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxController: {fileID: 1511049934}
+--- !u!114 &620822578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620822575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494001247367ffa46b22fa37b81a2b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNumber: 2
+  objectivesCount: 4
+  gameManager: {fileID: 620822577}
 --- !u!1 &670224177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1617,7 @@ GameObject:
   - component: {fileID: 841539324}
   m_Layer: 0
   m_Name: EmptySpot (5)
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1634,6 +1649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 151120654}
   nextObject: {fileID: 1254086916}
   activateNextAnimation: 0
@@ -3704,7 +3720,7 @@ GameObject:
   - component: {fileID: 1652940324}
   m_Layer: 0
   m_Name: EmptySpot (6)
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3736,6 +3752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 151120654}
   nextObject: {fileID: 1975741714}
   activateNextAnimation: 0
@@ -3883,7 +3900,7 @@ GameObject:
   - component: {fileID: 1696201576}
   m_Layer: 0
   m_Name: EmptySpot (2)
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3975,6 +3992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 151120654}
   nextObject: {fileID: 1467776695}
   activateNextAnimation: 0
@@ -5240,7 +5258,7 @@ GameObject:
   - component: {fileID: 2141327265}
   m_Layer: 0
   m_Name: EmptySpot (4)
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5272,6 +5290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 151120654}
   nextObject: {fileID: 1991918658}
   activateNextAnimation: 0
@@ -5713,7 +5732,7 @@ PrefabInstance:
     - target: {fileID: 2826084369695081988, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.3
+      value: 3.53
       objectReference: {fileID: 0}
     - target: {fileID: 2826084369695081988, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
         type: 3}

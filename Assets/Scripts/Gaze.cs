@@ -13,7 +13,8 @@ public class Gaze : MonoBehaviour
     public GameObject text;
     Interactable seenObject;
     int interactableLayer = 8;
-    [SerializeField]FoxController fox;
+    [SerializeField] FoxController fox;
+    [SerializeField] LevelManager levelManager;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class Gaze : MonoBehaviour
 
     void Update()
     {
-             myTime += Time.deltaTime;
+            myTime += Time.deltaTime;
             radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
             if (myTime >= 2f && !gazeTimerUp)
             {
@@ -32,18 +33,28 @@ public class Gaze : MonoBehaviour
             }
     }
 
+    void OnEnable()
+    {
+        this.gameObject.GetComponent<MOVER>().enabled = false;
+    }
+
     public void resetCounter()
     {
         gazeTimerUp = false;
         myTime = 0f;
         radialPorgress.GetComponent<Image>().fillAmount = myTime;
+        this.gameObject.GetComponent<MOVER>().enabled = true;
     }
+
     public void Interact()
     {
         gazeTimerUp = true;
 
         if (seenObject.gameObject.layer == interactableLayer)
         {
+            if (seenObject.CompareTag("Objective"))
+                levelManager.ObjectiveTriggered();
+
             seenObject.Interact();
             fox.ObjectSeen(seenObject.gameObject);
         }

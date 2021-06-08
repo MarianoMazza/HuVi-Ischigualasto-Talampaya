@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class WindEvent : MonoBehaviour
 {
-
-    void Update()
-    {
-
-    }
-
-    private void FixedUpdate()
-    {
-
-    }
+    [SerializeField] AudioClip windSound;
+    [SerializeField] AudioSource audioSource;
 
     IEnumerator RandomWindTiming(float time)
     {
@@ -21,9 +13,10 @@ public class WindEvent : MonoBehaviour
 
         if (Random.Range(0, 100) < 50)
         {
-            Debug.Log("Aviso, maestro");
             this.GetComponent<MOVER>().speed = 4;
+            audioSource.Play();
             yield return new WaitForSeconds(time);
+            audioSource.Stop();
             this.GetComponent<MOVER>().speed = 9;
         }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractableWithSound : Interactable
 {
     //[SerializeField] AudioClip[] speech;
-    //[SerializeField] AudioClip speech;
+    [SerializeField] AudioClip dialogue;
     [SerializeField] AudioSource audioSource;
     [SerializeField] GameObject nextObject;
     [SerializeField] bool activateNextAnimation;
@@ -17,14 +17,13 @@ public class InteractableWithSound : Interactable
     public override void Interact()
     {
         if (rangerPosition != null)
-        {
             ranger.transform.position = rangerPosition.transform.position;
-        }
+
         Speak();
+
         if (gameObject.GetComponent<Animator>())
-        {
             gameObject.GetComponent<Animator>().enabled = true;
-        }
+
         SpawnNextObject();
     }
 
@@ -46,16 +45,13 @@ public class InteractableWithSound : Interactable
         {
             nextObject.SetActive(true);
             if (nextObject.GetComponent<Animator>() && activateNextAnimation)
-            {
                 StartCoroutine(AnimateAfterTime(timeToAnimateNext));
 
-            }
         }
     }
     IEnumerator AnimateAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-
         nextObject.GetComponent<Animator>().enabled = true;
     }
 
@@ -74,7 +70,8 @@ public class InteractableWithSound : Interactable
         // {
 
         //Assign the clip to play
-        //audioSource.clip = speech;
+        if(audioSource.gameObject != this.gameObject)
+            audioSource.clip = dialogue;
 
         //Play
         audioSource.Play();

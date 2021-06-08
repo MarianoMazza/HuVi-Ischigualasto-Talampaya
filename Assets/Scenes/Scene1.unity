@@ -2232,7 +2232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a250e4faa11b02c4cbed9358de5163ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxController: {fileID: 1511049934}
 --- !u!4 &658142679
 Transform:
   m_ObjectHideFlags: 0
@@ -3847,7 +3846,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 545d9153e8f950d43b093c7edec677d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: adfedf8cf4b4b3b4dbb383ac8cf04466, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3945,9 +3944,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 8300000, guid: adfedf8cf4b4b3b4dbb383ac8cf04466, type: 3}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 1462076457}
   activateNextAnimation: 1
+  timeToAnimateNext: 0
+  rangerPosition: {fileID: 0}
+  ranger: {fileID: 0}
 --- !u!65 &1078005554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17440,9 +17443,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 1780825374}
   activateNextAnimation: 0
+  timeToAnimateNext: 0
+  rangerPosition: {fileID: 0}
+  ranger: {fileID: 0}
 --- !u!82 &1846002705
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18592,13 +18599,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125356075}
-  m_LocalRotation: {x: -0, y: -0.16327965, z: -0, w: 0.98657984}
+  m_LocalRotation: {x: -0, y: -0.18026434, z: -0, w: 0.9836182}
   m_LocalPosition: {x: -13.02, y: 7.64, z: -27.02}
   m_LocalScale: {x: 1, y: 14.987, z: 64.082245}
   m_Children: []
   m_Father: {fileID: 769360182}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -18.795, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -20.77, z: 0}
 --- !u!65 &2125356077
 BoxCollider:
   m_ObjectHideFlags: 0

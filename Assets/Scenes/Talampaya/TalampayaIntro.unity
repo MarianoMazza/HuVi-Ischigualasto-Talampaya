@@ -2119,6 +2119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620822576}
   - component: {fileID: 620822577}
+  - component: {fileID: 620822578}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2152,7 +2153,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a250e4faa11b02c4cbed9358de5163ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxController: {fileID: 1511049934}
+--- !u!114 &620822578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620822575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494001247367ffa46b22fa37b81a2b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNumber: 0
+  objectivesCount: 1
+  gameManager: {fileID: 620822577}
 --- !u!1 &658942959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,9 +2182,9 @@ GameObject:
   - component: {fileID: 658942963}
   - component: {fileID: 658942962}
   - component: {fileID: 658942961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FinishButton
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2265,11 +2280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 358112908}
   activateNextAnimation: 1
   timeToAnimateNext: 0
-  rangerPosition: {x: 0, y: 0, z: 0}
+  rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
 --- !u!65 &658942963
 BoxCollider:
@@ -4416,6 +4432,11 @@ PrefabInstance:
       propertyPath: fox
       value: 
       objectReference: {fileID: 1511049934}
+    - target: {fileID: 3686092146233854675, guid: cbc9d644f36a9d14e818ae3a3529d1f1,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 620822578}
     - target: {fileID: 3686092146233854697, guid: cbc9d644f36a9d14e818ae3a3529d1f1,
         type: 3}
       propertyPath: m_Name
@@ -4953,11 +4974,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 358112908}
   activateNextAnimation: 1
   timeToAnimateNext: 0
-  rangerPosition: {x: 0, y: 0, z: 0}
+  rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
 --- !u!82 &1846002705
 AudioSource:
@@ -7159,7 +7181,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 749515232, guid: 9a549632d27d1ac4ab1ce2870662428e, type: 3}
       propertyPath: sceneName
-      value: TalampayaCanyon
+      value: TalampayaCanyon2
       objectReference: {fileID: 0}
     - target: {fileID: 749515233, guid: 9a549632d27d1ac4ab1ce2870662428e, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
