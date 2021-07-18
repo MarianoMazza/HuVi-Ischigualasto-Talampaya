@@ -1,66 +1,182 @@
 fileFormatVersion: 2
 guid: b0269e1c5af35324aa3cea2b80e12c0e
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: root 1
-    100004: root 10
-    100006: root 2
-    100008: root 3
-    100010: root 4
-    100012: root 5
-    100014: root 6
-    100016: root 7
-    100018: root 8
-    100020: root 9
-    400000: //RootNode
-    400002: root 1
-    400004: root 10
-    400006: root 2
-    400008: root 3
-    400010: root 4
-    400012: root 5
-    400014: root 6
-    400016: root 7
-    400018: root 8
-    400020: root 9
-    2100000: Material_181
-    2100002: Material_183
-    2100004: Material_185
-    2100006: Material_187
-    2100008: Material_191
-    2100010: Material_193
-    2300000: root 1
-    2300002: root 10
-    2300004: root 2
-    2300006: root 3
-    2300008: root 4
-    2300010: root 5
-    2300012: root 6
-    2300014: root 7
-    2300016: root 8
-    2300018: root 9
-    3300000: root 1
-    3300002: root 10
-    3300004: root 2
-    3300006: root 3
-    3300008: root 4
-    3300010: root 5
-    3300012: root 6
-    3300014: root 7
-    3300016: root 8
-    3300018: root 9
-    4300000: root
-    4300002: root
-    4300004: root
-    4300006: root
-    4300008: root
-    4300010: root
-    4300012: root
-    4300014: root
-    4300016: root
-    4300018: root
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: root 1
+  - first:
+      1: 100004
+    second: root 10
+  - first:
+      1: 100006
+    second: root 2
+  - first:
+      1: 100008
+    second: root 3
+  - first:
+      1: 100010
+    second: root 4
+  - first:
+      1: 100012
+    second: root 5
+  - first:
+      1: 100014
+    second: root 6
+  - first:
+      1: 100016
+    second: root 7
+  - first:
+      1: 100018
+    second: root 8
+  - first:
+      1: 100020
+    second: root 9
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: root 1
+  - first:
+      4: 400004
+    second: root 10
+  - first:
+      4: 400006
+    second: root 2
+  - first:
+      4: 400008
+    second: root 3
+  - first:
+      4: 400010
+    second: root 4
+  - first:
+      4: 400012
+    second: root 5
+  - first:
+      4: 400014
+    second: root 6
+  - first:
+      4: 400016
+    second: root 7
+  - first:
+      4: 400018
+    second: root 8
+  - first:
+      4: 400020
+    second: root 9
+  - first:
+      21: 2100000
+    second: Material_181
+  - first:
+      21: 2100002
+    second: Material_183
+  - first:
+      21: 2100004
+    second: Material_185
+  - first:
+      21: 2100006
+    second: Material_187
+  - first:
+      21: 2100008
+    second: Material_191
+  - first:
+      21: 2100010
+    second: Material_193
+  - first:
+      23: 2300000
+    second: root 1
+  - first:
+      23: 2300002
+    second: root 10
+  - first:
+      23: 2300004
+    second: root 2
+  - first:
+      23: 2300006
+    second: root 3
+  - first:
+      23: 2300008
+    second: root 4
+  - first:
+      23: 2300010
+    second: root 5
+  - first:
+      23: 2300012
+    second: root 6
+  - first:
+      23: 2300014
+    second: root 7
+  - first:
+      23: 2300016
+    second: root 8
+  - first:
+      23: 2300018
+    second: root 9
+  - first:
+      33: 3300000
+    second: root 1
+  - first:
+      33: 3300002
+    second: root 10
+  - first:
+      33: 3300004
+    second: root 2
+  - first:
+      33: 3300006
+    second: root 3
+  - first:
+      33: 3300008
+    second: root 4
+  - first:
+      33: 3300010
+    second: root 5
+  - first:
+      33: 3300012
+    second: root 6
+  - first:
+      33: 3300014
+    second: root 7
+  - first:
+      33: 3300016
+    second: root 8
+  - first:
+      33: 3300018
+    second: root 9
+  - first:
+      43: 4300000
+    second: root
+  - first:
+      43: 4300002
+    second: root
+  - first:
+      43: 4300004
+    second: root
+  - first:
+      43: 4300006
+    second: root
+  - first:
+      43: 4300008
+    second: root
+  - first:
+      43: 4300010
+    second: root
+  - first:
+      43: 4300012
+    second: root
+  - first:
+      43: 4300014
+    second: root
+  - first:
+      43: 4300016
+    second: root
+  - first:
+      43: 4300018
+    second: root
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -78,7 +194,7 @@ ModelImporter:
       name: Material_185
     second: {fileID: 2100000, guid: be732c24d8851314f9e67c3e6d3d3873, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -108,36 +224,42 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -147,14 +269,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

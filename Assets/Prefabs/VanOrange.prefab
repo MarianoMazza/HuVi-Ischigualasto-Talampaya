@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7622237418244279596
 Transform:
@@ -181,9 +181,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7622237418244279596}
     m_Modifications:
+    - target: {fileID: 129622, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 162266, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
       propertyPath: m_Name
       value: Car_5_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 162266, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 166266, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 178654, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 195176, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 490478, guid: f07b089f2dede914a900c8e34e599f38, type: 3}
       propertyPath: m_LocalPosition.x

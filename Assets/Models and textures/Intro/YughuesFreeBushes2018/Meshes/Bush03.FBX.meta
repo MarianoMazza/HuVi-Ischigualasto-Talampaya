@@ -1,70 +1,188 @@
 fileFormatVersion: 2
 guid: 3d529691bc8baa249a469045aae25cf5
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Bush03_B_LOD0
-    100004: Bush03_B_LOD1
-    100006: Bush03_B_LOD2
-    100008: Bush03_B_LOD3
-    100010: Bush03_F_LOD0
-    100012: Bush03_F_LOD1
-    100014: Bush03_F_LOD2
-    100016: Bush03_L_LOD0
-    100018: Bush03_L_LOD1
-    100020: Bush03_L_LOD2
-    100022: Bush03_L_LOD3
-    400000: //RootNode
-    400002: Bush03_B_LOD0
-    400004: Bush03_B_LOD1
-    400006: Bush03_B_LOD2
-    400008: Bush03_B_LOD3
-    400010: Bush03_F_LOD0
-    400012: Bush03_F_LOD1
-    400014: Bush03_F_LOD2
-    400016: Bush03_L_LOD0
-    400018: Bush03_L_LOD1
-    400020: Bush03_L_LOD2
-    400022: Bush03_L_LOD3
-    2100000: 'Material #27'
-    2300000: Bush03_B_LOD0
-    2300002: Bush03_B_LOD1
-    2300004: Bush03_B_LOD2
-    2300006: Bush03_B_LOD3
-    2300008: Bush03_F_LOD0
-    2300010: Bush03_F_LOD1
-    2300012: Bush03_F_LOD2
-    2300014: Bush03_L_LOD0
-    2300016: Bush03_L_LOD1
-    2300018: Bush03_L_LOD2
-    2300020: Bush03_L_LOD3
-    3300000: Bush03_B_LOD0
-    3300002: Bush03_B_LOD1
-    3300004: Bush03_B_LOD2
-    3300006: Bush03_B_LOD3
-    3300008: Bush03_F_LOD0
-    3300010: Bush03_F_LOD1
-    3300012: Bush03_F_LOD2
-    3300014: Bush03_L_LOD0
-    3300016: Bush03_L_LOD1
-    3300018: Bush03_L_LOD2
-    3300020: Bush03_L_LOD3
-    4300000: Bush03_B_LOD0
-    4300002: Bush03_F_LOD0
-    4300004: Bush03_L_LOD0
-    4300006: Bush03_B_LOD1
-    4300008: Bush03_B_LOD2
-    4300010: Bush03_B_LOD3
-    4300012: Bush03_L_LOD1
-    4300014: Bush03_F_LOD1
-    4300016: Bush03_F_LOD2
-    4300018: Bush03_L_LOD2
-    4300020: Bush03_L_LOD3
-    20500000: //RootNode
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Bush03_B_LOD0
+  - first:
+      1: 100004
+    second: Bush03_B_LOD1
+  - first:
+      1: 100006
+    second: Bush03_B_LOD2
+  - first:
+      1: 100008
+    second: Bush03_B_LOD3
+  - first:
+      1: 100010
+    second: Bush03_F_LOD0
+  - first:
+      1: 100012
+    second: Bush03_F_LOD1
+  - first:
+      1: 100014
+    second: Bush03_F_LOD2
+  - first:
+      1: 100016
+    second: Bush03_L_LOD0
+  - first:
+      1: 100018
+    second: Bush03_L_LOD1
+  - first:
+      1: 100020
+    second: Bush03_L_LOD2
+  - first:
+      1: 100022
+    second: Bush03_L_LOD3
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Bush03_B_LOD0
+  - first:
+      4: 400004
+    second: Bush03_B_LOD1
+  - first:
+      4: 400006
+    second: Bush03_B_LOD2
+  - first:
+      4: 400008
+    second: Bush03_B_LOD3
+  - first:
+      4: 400010
+    second: Bush03_F_LOD0
+  - first:
+      4: 400012
+    second: Bush03_F_LOD1
+  - first:
+      4: 400014
+    second: Bush03_F_LOD2
+  - first:
+      4: 400016
+    second: Bush03_L_LOD0
+  - first:
+      4: 400018
+    second: Bush03_L_LOD1
+  - first:
+      4: 400020
+    second: Bush03_L_LOD2
+  - first:
+      4: 400022
+    second: Bush03_L_LOD3
+  - first:
+      21: 2100000
+    second: Material #27
+  - first:
+      23: 2300000
+    second: Bush03_B_LOD0
+  - first:
+      23: 2300002
+    second: Bush03_B_LOD1
+  - first:
+      23: 2300004
+    second: Bush03_B_LOD2
+  - first:
+      23: 2300006
+    second: Bush03_B_LOD3
+  - first:
+      23: 2300008
+    second: Bush03_F_LOD0
+  - first:
+      23: 2300010
+    second: Bush03_F_LOD1
+  - first:
+      23: 2300012
+    second: Bush03_F_LOD2
+  - first:
+      23: 2300014
+    second: Bush03_L_LOD0
+  - first:
+      23: 2300016
+    second: Bush03_L_LOD1
+  - first:
+      23: 2300018
+    second: Bush03_L_LOD2
+  - first:
+      23: 2300020
+    second: Bush03_L_LOD3
+  - first:
+      33: 3300000
+    second: Bush03_B_LOD0
+  - first:
+      33: 3300002
+    second: Bush03_B_LOD1
+  - first:
+      33: 3300004
+    second: Bush03_B_LOD2
+  - first:
+      33: 3300006
+    second: Bush03_B_LOD3
+  - first:
+      33: 3300008
+    second: Bush03_F_LOD0
+  - first:
+      33: 3300010
+    second: Bush03_F_LOD1
+  - first:
+      33: 3300012
+    second: Bush03_F_LOD2
+  - first:
+      33: 3300014
+    second: Bush03_L_LOD0
+  - first:
+      33: 3300016
+    second: Bush03_L_LOD1
+  - first:
+      33: 3300018
+    second: Bush03_L_LOD2
+  - first:
+      33: 3300020
+    second: Bush03_L_LOD3
+  - first:
+      43: 4300000
+    second: Bush03_B_LOD0
+  - first:
+      43: 4300002
+    second: Bush03_F_LOD0
+  - first:
+      43: 4300004
+    second: Bush03_L_LOD0
+  - first:
+      43: 4300006
+    second: Bush03_B_LOD1
+  - first:
+      43: 4300008
+    second: Bush03_B_LOD2
+  - first:
+      43: 4300010
+    second: Bush03_B_LOD3
+  - first:
+      43: 4300012
+    second: Bush03_L_LOD1
+  - first:
+      43: 4300014
+    second: Bush03_F_LOD1
+  - first:
+      43: 4300016
+    second: Bush03_F_LOD2
+  - first:
+      43: 4300018
+    second: Bush03_L_LOD2
+  - first:
+      43: 4300020
+    second: Bush03_L_LOD3
+  - first:
+      205: 20500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -98,9 +216,10 @@ ModelImporter:
     - 0.0625
     - 0.01
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
@@ -108,18 +227,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -128,10 +248,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -141,13 +261,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

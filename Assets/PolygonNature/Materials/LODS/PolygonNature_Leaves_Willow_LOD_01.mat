@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: PolygonNature_Leaves_Willow_LOD_01
   m_Shader: {fileID: 4800000, guid: 3357a1db18fee1f4f8fab7bf6f39c214, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
@@ -90,6 +91,6 @@ Material:
     - __dirty: 1
     m_Colors:
     - _Color: {r: 0.5790151, g: 0.6544118, b: 0.31277034, a: 1}
-    - _ColorTint: {r: 0.45098042, g: 0.49411768, b: 0.19215688, a: 0}
+    - _ColorTint: {r: 0.42352942, g: 0.59607846, b: 0, a: 0}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6831271795264041945
 Transform:
@@ -181,9 +181,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6831271795264041945}
     m_Modifications:
+    - target: {fileID: 129622, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 162266, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
       propertyPath: m_Name
       value: Car_5_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 162266, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 166266, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 178654, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 195176, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 490478, guid: bbbf9fb7447ddf442a86dd23695ed184, type: 3}
       propertyPath: m_LocalPosition.x
