@@ -7,8 +7,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] int levelNumber;
     [SerializeField] int objectivesCount;
     private int objectivesTriggered = 0;
-    [SerializeField] GameManager gameManager;
+    GameManager gameManager;
 
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
     public void ObjectiveTriggered()
     {
         objectivesTriggered++;

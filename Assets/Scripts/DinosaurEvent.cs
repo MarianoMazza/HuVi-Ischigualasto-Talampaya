@@ -9,6 +9,7 @@ public class DinosaurEvent : MonoBehaviour
     [SerializeField] GameObject skull;
     [SerializeField] GameObject player;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] FoxController fox;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -20,7 +21,7 @@ public class DinosaurEvent : MonoBehaviour
             audioSource.Play();
             player.GetComponent<Animator>().SetTrigger("WindSoundOn");
             StartCoroutine(WaitThisTime(5));
-
+            fox.ObjectSeen(collision.gameObject);
         }
     }
 

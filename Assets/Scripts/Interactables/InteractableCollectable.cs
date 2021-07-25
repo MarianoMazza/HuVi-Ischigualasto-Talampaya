@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class InteractableCollectable : Interactable
 {
-    [SerializeField] GameManager gameManager;
+    [SerializeField] int objectNumber;
+    [SerializeField] string objectZone;
+    GameManager gameManager;
+
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
 
     public override void Interact()
     {
-        
+        gameManager.CollectableFound(objectNumber,objectZone);
     }
 
 }

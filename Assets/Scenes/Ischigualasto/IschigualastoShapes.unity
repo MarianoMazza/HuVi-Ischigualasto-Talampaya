@@ -176,6 +176,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 375951587}
   ranger: {fileID: 1011592412}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!65 &173075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -721,6 +724,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
   animationName: NotSteal
   thief: {fileID: 256845440}
 --- !u!1 &123077147
@@ -995,6 +1001,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
   animationName: Steal
   thief: {fileID: 256845440}
 --- !u!114 &138027258
@@ -1734,6 +1743,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!1 &268580201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +2867,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 620822576}
-  - component: {fileID: 620822577}
   - component: {fileID: 620822578}
   m_Layer: 0
   m_Name: GameManager
@@ -2878,18 +2889,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &620822577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620822575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a250e4faa11b02c4cbed9358de5163ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &620822578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2904,7 +2903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNumber: 5
   objectivesCount: 1
-  gameManager: {fileID: 620822577}
 --- !u!1001 &651137418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4650,6 +4648,38 @@ PrefabInstance:
       propertyPath: sceneName
       value: IschigualastoMuseum
       objectReference: {fileID: 0}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3686092144610791008}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3686092144610791008}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: resetCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3686092144610791008}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3686092144610791008}
+    - target: {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ObjectSeen
+      objectReference: {fileID: 0}
     - target: {fileID: 6831271795264041945, guid: c3dbd423c6f5bf24dbb930755a0284cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5366,6 +5396,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!65 &1359013554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5716,6 +5749,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!65 &1510060128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5807,6 +5843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e721a726205e5f49b7482fd139a6685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkingSpeed: 3
+  runningSpeed: 7
   targets:
   - {fileID: 0}
   - {fileID: 0}

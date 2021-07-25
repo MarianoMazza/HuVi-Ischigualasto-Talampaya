@@ -12,6 +12,11 @@ public class InteractableWithSound : Interactable
     [SerializeField] float timeToAnimateNext;
     [SerializeField] GameObject rangerPosition;
     [SerializeField] GameObject ranger;
+
+    [Header("Fox Settings")]
+    [SerializeField] bool forceMoveFox;
+    [SerializeField] bool forceRunFox;
+    [SerializeField] FoxController fox;
     //string currentAudio;
 
     public override void Interact()
@@ -23,6 +28,12 @@ public class InteractableWithSound : Interactable
 
         if (gameObject.GetComponent<Animator>())
             gameObject.GetComponent<Animator>().enabled = true;
+
+        if (forceMoveFox)
+            fox.RemoveCurrentTarget();
+
+        if (forceRunFox)
+            fox.Run();
 
         SpawnNextObject();
     }

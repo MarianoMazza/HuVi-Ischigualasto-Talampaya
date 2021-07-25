@@ -58,26 +58,6 @@ public class Gaze : MonoBehaviour
             seenObject.Interact();
             fox.ObjectSeen(seenObject.gameObject);
         }
-        /*if (objetoObservado.gameObject.name == "Portal")
-        {
-            if (!objetoObservado.GetComponent<Portal>().posicionarObjeto) { 
-            levantarObjetos.SoltarEnPortales();
-            }
-            levantarObjetos.PasarPortal();
-        }
-        else { 
-        if (!levantarObjetos.carrying)
-        {
-            levantarObjetos.pickup();
-        }
-            else {
-                    if(objetoObservado.tag == "Objetivo" || objetoObservado.tag == "ComputadoraHopper") { 
-                levantarObjetos.Seleccionarlo();
-                levantarObjetos.dropObject();
-                    }
-                    else { levantarObjetos.pickup(); }
-            }
-        }*/
     }
 
     public void ObjectSeen(Interactable selectedInteractable)

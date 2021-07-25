@@ -8,6 +8,7 @@ public class WindEvent : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] ParticleSystem sandstorm;
     Animator playerAnimator;
+    [SerializeField] FoxController fox;
 
     private void Start()
     {
@@ -41,10 +42,12 @@ public class WindEvent : MonoBehaviour
         {
             StartCoroutine(RandomWindTiming(10));
             audioSource.Play();
+            fox.ObjectSeen(collision.gameObject);
         }
-        else if(collision.gameObject.CompareTag("Protection"))
+        else if (collision.gameObject.CompareTag("Protection"))
         {
             this.GetComponent<MOVER>().speed = 9;
+            collision.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }
