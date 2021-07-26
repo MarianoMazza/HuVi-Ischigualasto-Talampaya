@@ -27,14 +27,13 @@ public class WindEvent : MonoBehaviour
             sandstorm.Play();
             yield return new WaitForSeconds(time);
             playerAnimator.SetTrigger("WindSoundOff");
-            this.GetComponent<MOVER>().speed = 9;
+            this.GetComponent<MOVER>().speed = 13;
             sandstorm.Stop();
         }
 
         StartCoroutine(RandomWindTiming(time));
 
     }
-
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -46,7 +45,7 @@ public class WindEvent : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Protection"))
         {
-            this.GetComponent<MOVER>().speed = 9;
+            this.GetComponent<MOVER>().speed = 13;
             collision.GetComponent<BoxCollider>().enabled = false;
         }
     }

@@ -5,11 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     bool[] completed = new bool[7];
-    bool[] collectibleTalampaya = new bool[7];
-    bool[] collectibleIschigualasto = new bool[7];
+    bool[] collectiblesTalampaya = new bool[5];
+    bool[] collectiblesIschigualasto = new bool[5];
     bool allScenesCompleted = false;
     bool visitedTalampaya = false;
     bool visitedIschigualasto = false;
+    CollectiblesSign collectiblesSign;
 
     private void Awake()
     {
@@ -30,13 +31,28 @@ public class GameManager : MonoBehaviour
 
     public void CollectableFound(int collectableNumber, string objectZone)
     {
-        if (objectZone.Equals("Talampaya"))
+        if (collectiblesSign.zoneName.Equals("Talampaya"))
         {
-            collectibleTalampaya[collectableNumber] = true;
+            collectiblesTalampaya[collectableNumber] = true;
+            collectiblesSign.ReceiveFoundCollectables(collectiblesTalampaya);
         }
         else
         {
-            collectibleIschigualasto[collectableNumber] = true;
+            collectiblesIschigualasto[collectableNumber] = true;
+            collectiblesSign.ReceiveFoundCollectables(collectiblesIschigualasto);
+        }
+    }
+
+    public void ReceiveCollectiblesSign(CollectiblesSign _collectiblesSign)
+    {
+        collectiblesSign = _collectiblesSign;
+        if (collectiblesSign.zoneName.Equals("Talampaya"))
+        {
+            collectiblesSign.ReceiveFoundCollectables(collectiblesTalampaya);
+        }
+        else
+        {
+            collectiblesSign.ReceiveFoundCollectables(collectiblesIschigualasto);
         }
     }
 }

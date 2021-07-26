@@ -452,7 +452,6 @@ GameObject:
   - component: {fileID: 4155164769505225267}
   - component: {fileID: 4155164769505225266}
   - component: {fileID: 4155164769505225269}
-  - component: {fileID: 4155164769505225231}
   - component: {fileID: 4155164769505225265}
   - component: {fileID: 4155164769505225229}
   - component: {fileID: 4155164769505225228}
@@ -528,24 +527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 4155164770455311869}
   datazo: {x: 0, y: 0, z: 0}
---- !u!114 &4155164769505225231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4155164769505225271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d62f4140d220d4787910decaa784c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  period: 2
-  sorpresa: {fileID: 0}
-  robotRoot: {fileID: 0}
-  camara: {fileID: 4155164770455311841}
-  robot: {fileID: 0}
-  puertaInicial: {fileID: 0}
 --- !u!114 &4155164769505225265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +565,7 @@ MonoBehaviour:
   gazeTimerUp: 0
   text: {fileID: 0}
   fox: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!114 &4155164769505225228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,15 +970,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60270cf52a5e94998a5a335989159738, type: 3}
---- !u!1 &4155164768765844813 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 171526, guid: 60270cf52a5e94998a5a335989159738,
-    type: 3}
-  m_PrefabInstance: {fileID: 4155164768765936459}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4155164768766023863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738,
+    type: 3}
+  m_PrefabInstance: {fileID: 4155164768765936459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4155164768765844813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 171526, guid: 60270cf52a5e94998a5a335989159738,
     type: 3}
   m_PrefabInstance: {fileID: 4155164768765936459}
   m_PrefabAsset: {fileID: 0}

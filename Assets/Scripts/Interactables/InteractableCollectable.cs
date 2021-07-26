@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableCollectable : Interactable
+public class InteractableCollectable : InteractableWithSound
 {
+    [Header("Collectable Settings")]
     [SerializeField] int objectNumber;
     [SerializeField] string objectZone;
     GameManager gameManager;
@@ -15,7 +16,7 @@ public class InteractableCollectable : Interactable
 
     public override void Interact()
     {
+        base.Interact();
         gameManager.CollectableFound(objectNumber,objectZone);
     }
-
 }
