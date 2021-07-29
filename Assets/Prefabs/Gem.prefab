@@ -213,6 +213,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!114 &2825570334330313404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,8 +308,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2825570333993918643}
   m_LocalRotation: {x: 0.53364384, y: 0.46392274, z: 0.46392274, w: 0.53364384}
-  m_LocalPosition: {x: 0.082228735, y: -0.8316955, z: -3.9436476}
-  m_LocalScale: {x: 7.2690196, y: 0.8142114, z: 6.533308}
+  m_LocalPosition: {x: 0.18, y: -0.1, z: -3.94}
+  m_LocalScale: {x: 3.9578333, y: 0.4433216, z: 3.5572536}
   m_Children: []
   m_Father: {fileID: 2826084369695081988}
   m_RootOrder: 0

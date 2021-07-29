@@ -5344,7 +5344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 8300000, guid: 0738f5470196a0c4c8dc8a96dcc745e1, type: 3}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 358112908}
   activateNextAnimation: 1
@@ -7304,7 +7304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 8300000, guid: 6f18e51f665b80247a9a7481070a9f06, type: 3}
   audioSource: {fileID: 1846002705}
   nextObject: {fileID: 0}
   activateNextAnimation: 0
@@ -11476,9 +11476,10 @@ GameObject:
   - component: {fileID: 1846002701}
   - component: {fileID: 1846002705}
   - component: {fileID: 1846002706}
-  - component: {fileID: 1846002704}
+  - component: {fileID: 1846002709}
   - component: {fileID: 1846002708}
   - component: {fileID: 1846002707}
+  - component: {fileID: 1846002704}
   m_Layer: 8
   m_Name: AvatarGuardaparque
   m_TagString: Untagged
@@ -11583,7 +11584,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 545d9153e8f950d43b093c7edec677d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b58cee3bb7990794f94bad826613a88c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11733,7 +11734,7 @@ MonoBehaviour:
           m_MethodName: ObjectSeen
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 1846002704}
+            m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -11766,6 +11767,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1846002709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846002700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e404dd3c05942849b16454eff3c86c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  audioSource: {fileID: 1846002705}
+  nextObject: {fileID: 358112908}
+  activateNextAnimation: 1
+  timeToAnimateNext: 0
+  rangerPosition: {fileID: 0}
+  ranger: {fileID: 0}
+  forceMoveFox: 1
+  forceRunFox: 0
+  fox: {fileID: 1511049934}
+  animationName: aaaaa
+  AnimatedObject: {fileID: 1846002700}
 --- !u!1 &1882258699
 GameObject:
   m_ObjectHideFlags: 0
@@ -13858,6 +13883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
+    - target: {fileID: 2825570334330313403, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 8300000, guid: e2c0934e184793a4d861dbc582633888, type: 3}
     - target: {fileID: 2825570334330313404, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target

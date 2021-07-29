@@ -4472,8 +4472,246 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectiblesSignTalampaya
       objectReference: {fileID: 0}
+    - target: {fileID: 2601306546545722900, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546545722900, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546545722900, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 627731914}
+    - target: {fileID: 2601306546545722900, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546545722900, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546545722901, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1511049934}
+    - target: {fileID: 2601306546545722901, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1846002705}
+    - target: {fileID: 2601306546622021576, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1511049934}
+    - target: {fileID: 2601306546622021576, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1846002705}
+    - target: {fileID: 2601306546622021579, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546622021579, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546622021579, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 627731913}
+    - target: {fileID: 2601306546622021579, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546622021579, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546635271177, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546635271177, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546635271177, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 627731912}
+    - target: {fileID: 2601306546635271177, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546635271177, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306546635271222, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1511049934}
+    - target: {fileID: 2601306546635271222, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1846002705}
+    - target: {fileID: 2601306547758513208, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1511049934}
+    - target: {fileID: 2601306547758513208, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1846002705}
+    - target: {fileID: 2601306547758513211, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306547758513211, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306547758513211, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 627731915}
+    - target: {fileID: 2601306547758513211, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306547758513211, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ObjectSeen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1631716532}
+    - target: {fileID: 2601306548006548044, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: resetCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601306548006548045, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 1511049934}
+    - target: {fileID: 2601306548006548045, guid: 7330d240f39091646b039dd2ee2e2634,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1846002705}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7330d240f39091646b039dd2ee2e2634, type: 3}
+--- !u!114 &627731912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2601306546635271222, guid: 7330d240f39091646b039dd2ee2e2634,
+    type: 3}
+  m_PrefabInstance: {fileID: 627731911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &627731913 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2601306546622021576, guid: 7330d240f39091646b039dd2ee2e2634,
+    type: 3}
+  m_PrefabInstance: {fileID: 627731911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &627731914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2601306546545722901, guid: 7330d240f39091646b039dd2ee2e2634,
+    type: 3}
+  m_PrefabInstance: {fileID: 627731911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &627731915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2601306547758513208, guid: 7330d240f39091646b039dd2ee2e2634,
+    type: 3}
+  m_PrefabInstance: {fileID: 627731911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &630386035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8110,6 +8348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2825570334330313403, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 8300000, guid: 939e48f186b8aa44bb095b2fa31ad2ef, type: 3}
     - target: {fileID: 2825570334330313404, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12061,7 +12304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 8300000, guid: 95363bae4d68d6247a0e78f4bdf012bf, type: 3}
   audioSource: {fileID: 1184539627}
   nextObject: {fileID: 0}
   activateNextAnimation: 0
