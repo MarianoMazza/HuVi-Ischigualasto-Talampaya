@@ -29,8 +29,7 @@ public class InteractableWithSound : Interactable
         if (gameObject.GetComponent<Animator>())
             gameObject.GetComponent<Animator>().enabled = true;
 
-        if (forceMoveFox)
-            fox.RemoveCurrentTarget();
+        StartCoroutine(MoveFoxAfterTime(timeToAnimateNext));
 
         if (forceRunFox)
             fox.Run();
@@ -60,10 +59,19 @@ public class InteractableWithSound : Interactable
 
         }
     }
+
     IEnumerator AnimateAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
         nextObject.GetComponent<Animator>().enabled = true;
+    }
+
+    IEnumerator MoveFoxAfterTime(float time)
+    {
+        if (forceMoveFox) { 
+            yield return new WaitForSeconds(time);
+            fox.RemoveCurrentTarget();
+        }
     }
 
     public void AnimateNextObject()
@@ -73,21 +81,20 @@ public class InteractableWithSound : Interactable
 
     public void Speak()
     {
-        //Convert the string to the audioClip index
-
-        //int audioIndex = FindAudio(currentAudio);
-
-        // if (audioIndex != -1)
-        // {
-
-        //Assign the clip to play
-        if(audioSource.gameObject != this.gameObject)
+        if (dialogue != null)
+        {
             audioSource.clip = dialogue;
-
-        //Play
+        }
         audioSource.Play();
+    }
 
-        // }
+    public void SetDialogue(AudioClip _dialogue)
+    {
+        dialogue = _dialogue;
+    }
 
+    public AudioClip GetDialogue()
+    {
+        return dialogue;
     }
 }

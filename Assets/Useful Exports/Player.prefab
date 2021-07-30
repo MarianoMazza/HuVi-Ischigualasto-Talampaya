@@ -103,14 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!33 &3686092144585321873
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686092144825761171}
-  m_Mesh: {fileID: 0}
 --- !u!1 &3686092144745548781
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +196,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &3686092144585321873
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686092144825761171}
+  m_Mesh: {fileID: 0}
 --- !u!1 &3686092144940480206
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +454,6 @@ GameObject:
   - component: {fileID: 3686092145301075238}
   - component: {fileID: 3686092145301075237}
   - component: {fileID: 3686092145301075236}
-  - component: {fileID: 3686092145301075233}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -578,19 +577,6 @@ MonoBehaviour:
   recorderSeamless: 0
   recorderSourceTag: Untagged
   recorderFoldout: 0
---- !u!114 &3686092145301075233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686092145301075263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca1f5289d5658a5428d43185a9f0be82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  robot: {fileID: 0}
 --- !u!1 &3686092145355981932
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,8 +746,8 @@ GameObject:
   - component: {fileID: 3686092146233854702}
   - component: {fileID: 3686092146233854672}
   m_Layer: 0
-  m_Name: Jugador
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -864,6 +850,7 @@ MonoBehaviour:
   inicio: {fileID: 0}
   camera: {fileID: 3686092145301075263}
   mainCamera: {fileID: 3686092145301075235}
+  minimumRotationX: 0
   noController: 99
 --- !u!114 &3686092146233854675
 MonoBehaviour:
@@ -883,6 +870,8 @@ MonoBehaviour:
   levantarObjetos: {fileID: 3686092146233854674}
   gazeTimerUp: 0
   text: {fileID: 0}
+  fox: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!114 &3686092146233854674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,10 +887,6 @@ MonoBehaviour:
   carrying: 0
   distance: 1.5
   smooth: 20
-  robot: {fileID: 0}
-  objetoObservado: {fileID: 0}
-  robotRoot: {fileID: 0}
-  referenciaFlotar: {fileID: 3686092144745548781}
   x: 0.3
   y: 0.3
   z: 0.1

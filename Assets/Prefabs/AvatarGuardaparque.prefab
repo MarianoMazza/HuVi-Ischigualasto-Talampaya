@@ -94,7 +94,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 545d9153e8f950d43b093c7edec677d7, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -212,6 +212,9 @@ MonoBehaviour:
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
   ranger: {fileID: 0}
+  forceMoveFox: 0
+  forceRunFox: 0
+  fox: {fileID: 0}
 --- !u!114 &1055914408614972849
 MonoBehaviour:
   m_ObjectHideFlags: 0
