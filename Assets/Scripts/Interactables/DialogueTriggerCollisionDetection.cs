@@ -11,8 +11,10 @@ public class DialogueTriggerCollisionDetection : InteractableWithSound
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            guardaparques.SetDialogue(GetDialogue());
+            guardaparques.SetDialogue(this.GetDialogue());
             guardaparques.Speak();
+            SpawnNextObject();
+            RepositionRanger();
         }
     }
 }

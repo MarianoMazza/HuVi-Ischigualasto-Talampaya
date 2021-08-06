@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     bool[] collectiblesTalampaya = new bool[5];
     bool[] collectiblesIschigualasto = new bool[5];
     bool allScenesCompleted = false;
+    [SerializeField]
     bool visitedTalampaya = false;
+    [SerializeField]
     bool visitedIschigualasto = false;
     CollectiblesSign collectiblesSign;
 
@@ -27,6 +29,23 @@ public class GameManager : MonoBehaviour
             if (completed[i] == false)
                 allScenesCompleted = false;
         }
+    }
+
+    public void ParkCompleted(string parkName)
+    {
+        if (parkName.Equals("Talampaya"))
+        {
+            visitedTalampaya = true;
+        }
+        else
+        {
+            visitedIschigualasto = true;
+        }
+    }
+    
+    public bool VisitedBothParks()
+    {
+        return (visitedTalampaya && visitedIschigualasto);
     }
 
     public void CollectableFound(int collectableNumber, string objectZone)

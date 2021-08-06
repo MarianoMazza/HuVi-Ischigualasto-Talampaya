@@ -19,8 +19,8 @@ public class MuseumManager : MonoBehaviour
     {
         if (light1.activeSelf && light2.activeSelf && light3.activeSelf) 
         {
-            audioSource.clip = dialogue;
-            audioSource.Play();
+           // audioSource.clip = dialogue;
+            //audioSource.Play();
             sign.SetActive(true);
         }
     }

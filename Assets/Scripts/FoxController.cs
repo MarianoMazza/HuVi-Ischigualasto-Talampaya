@@ -115,4 +115,9 @@ public class FoxController : Interactable
         animationName = "Run";
         this.GetComponent<Animator>().SetTrigger(animationName);
     }
+
+    public List<GameObject> getTargets()
+    {
+        return targets;
+    }
 }

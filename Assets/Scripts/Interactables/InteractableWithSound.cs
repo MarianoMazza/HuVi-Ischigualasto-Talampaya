@@ -21,8 +21,7 @@ public class InteractableWithSound : Interactable
 
     public override void Interact()
     {
-        if (rangerPosition != null)
-            ranger.transform.position = rangerPosition.transform.position;
+        RepositionRanger();
 
         Speak();
 
@@ -35,6 +34,15 @@ public class InteractableWithSound : Interactable
             fox.Run();
 
         SpawnNextObject();
+    }
+
+    public void RepositionRanger()
+    {
+        if (rangerPosition != null && ranger != null)
+        {
+            ranger.transform.position = new Vector3(rangerPosition.transform.position.x, ranger.transform.position.y, rangerPosition.transform.position.z);
+            ranger.transform.forward = new Vector3(rangerPosition.transform.forward.x, ranger.transform.forward.y, rangerPosition.transform.forward.z);
+        }
     }
 
     /* public int FindAudio(string audioName)
@@ -68,7 +76,8 @@ public class InteractableWithSound : Interactable
 
     IEnumerator MoveFoxAfterTime(float time)
     {
-        if (forceMoveFox) { 
+        if (forceMoveFox)
+        {
             yield return new WaitForSeconds(time);
             fox.RemoveCurrentTarget();
         }

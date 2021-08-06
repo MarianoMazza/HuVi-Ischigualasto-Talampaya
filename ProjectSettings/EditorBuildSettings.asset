@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ischigualasto/IschigualastoMuseum.unity
     guid: 8d6e70abf15ba9f4ea762b803f6d81df
+  - enabled: 1
+    path: Assets/Scenes/HuviEnding.unity
+    guid: d38df0e02a0cf0f4e951c34271d8b1d9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c0d32a4a426fd054d9fdd505c3551d77,
       type: 2}

@@ -6,8 +6,28 @@ using UnityEngine.SceneManagement;
 public class InteractableSceneChange : Interactable
 {
     [SerializeField] string sceneName;
+    [SerializeField] string park;
+    [SerializeField] bool finalLevel;
+    GameManager gameManager;
+    const string gameEnding = "HuviEnding";
+
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
     public override void Interact()
     {
-        SceneManager.LoadScene(sceneName);
+        if (finalLevel)
+        {
+            gameManager.ParkCompleted(park);
+        }
+        if (gameManager.VisitedBothParks())
+        {
+            SceneManager.LoadScene(gameEnding);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
