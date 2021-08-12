@@ -8,6 +8,9 @@ public class QuestionsScript : InteractableWithSound
     [SerializeField] QuestionsScript question;
     [SerializeField] GameObject nextQuestion;
     [SerializeField] GameObject answers;
+    [SerializeField] int timeToNextQuestion;
+    [SerializeField] bool amIFinalQuestion;
+    [SerializeField] GameObject finalCollider;
 
     public override void Interact()
     {
@@ -17,18 +20,19 @@ public class QuestionsScript : InteractableWithSound
 
     public void DoAnswer()
     {
-        if (question != null)
-        {
-            StartCoroutine(question.NextQuestion());
-        }
+        StartCoroutine(question.NextQuestion());
     }
 
     public IEnumerator NextQuestion()
     {
+        yield return new WaitForSeconds(timeToNextQuestion);
         if (nextQuestion != null)
         {
-            yield return new WaitForSeconds(5);
             nextQuestion.SetActive(true);
+        }
+        else
+        {
+            finalCollider.SetActive(false);
         }
         answers.SetActive(false);
         this.gameObject.SetActive(false);

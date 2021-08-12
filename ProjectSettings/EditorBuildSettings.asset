@@ -33,8 +33,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Ischigualasto/IschigualastoMuseum.unity
     guid: 8d6e70abf15ba9f4ea762b803f6d81df
   - enabled: 1
-    path: Assets/Scenes/HuviEnding.unity
-    guid: d38df0e02a0cf0f4e951c34271d8b1d9
+    path: Assets/Scenes/360Talampaya.unity
+    guid: e0004a43d8635924f97d12d7a5a81c27
+  - enabled: 1
+    path: Assets/Scenes/360Ischigualasto.unity
+    guid: 5aa2c3a297961fd42b938c5471117396
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 0f9480d776278714f9c71d7deac6ed73
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c0d32a4a426fd054d9fdd505c3551d77,
       type: 2}

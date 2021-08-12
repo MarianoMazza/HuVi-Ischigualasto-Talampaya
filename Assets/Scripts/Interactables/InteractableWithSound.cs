@@ -34,6 +34,12 @@ public class InteractableWithSound : Interactable
             fox.Run();
 
         SpawnNextObject();
+        DisableThisCollider();
+    }
+
+    public void DisableThisCollider()
+    {
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 
     public void RepositionRanger()

@@ -15,6 +15,7 @@ public class DialogueTriggerCollisionDetection : InteractableWithSound
             guardaparques.Speak();
             SpawnNextObject();
             RepositionRanger();
+            DisableThisCollider();
         }
     }
 }

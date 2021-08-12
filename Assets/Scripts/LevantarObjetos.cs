@@ -28,7 +28,6 @@ public class LevantarObjetos : MonoBehaviour
             carry(carriedObject);
             checkDrop();
         }
-
     }
     public void PasarPortal()
     {

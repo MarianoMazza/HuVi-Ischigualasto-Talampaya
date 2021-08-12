@@ -19,8 +19,11 @@ public class FoxController : Interactable
     [SerializeField] bool sitting;
     private void Start()
     {
-        currentTarget = targets[0].transform.position;
-        CalculateDistanceToObject();
+        if (targets.Count > 0)
+        {
+            currentTarget = targets[0].transform.position;
+            CalculateDistanceToObject();
+        }
     }
 
     void Update()

@@ -9,7 +9,6 @@ public class InteractableSceneChange : Interactable
     [SerializeField] string park;
     [SerializeField] bool finalLevel;
     GameManager gameManager;
-    const string gameEnding = "HuviEnding";
 
     private void Awake()
     {
@@ -20,10 +19,6 @@ public class InteractableSceneChange : Interactable
         if (finalLevel)
         {
             gameManager.ParkCompleted(park);
-        }
-        if (gameManager.VisitedBothParks())
-        {
-            SceneManager.LoadScene(gameEnding);
         }
         else
         {

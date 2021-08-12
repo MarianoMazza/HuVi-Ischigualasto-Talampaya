@@ -8,11 +8,7 @@ public class MuseumManager : MonoBehaviour
     [SerializeField] AudioClip dialogue;
     [SerializeField] AudioSource audioSource;
     [SerializeField] GameObject sign;
-
-    void Start()
-    {
-
-    }
+    [SerializeField] GameObject dinosaurCollider;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +18,7 @@ public class MuseumManager : MonoBehaviour
            // audioSource.clip = dialogue;
             //audioSource.Play();
             sign.SetActive(true);
+            dinosaurCollider.SetActive(true);
         }
     }
 }

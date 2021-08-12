@@ -2212,6 +2212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a250e4faa11b02c4cbed9358de5163ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visitedTalampaya: 0
+  visitedIschigualasto: 0
 --- !u!1 &715809757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,11 +2475,11 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1013686992}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &749515232
+--- !u!114 &749515229 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 749515232, guid: 9a549632d27d1ac4ab1ce2870662428e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1013686992}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749515227}
   m_Enabled: 1
@@ -2485,7 +2487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc9b4c9724a4454e8d9f719d32e4d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TalampayaIntro
 --- !u!114 &749515233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2518,7 +2519,7 @@ MonoBehaviour:
           m_MethodName: ObjectSeen
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 749515232}
+            m_ObjectArgument: {fileID: 749515229}
             m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -2837,11 +2838,11 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2712226520615222476}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &802176167
+--- !u!114 &802176164 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 802176167, guid: c3dbd423c6f5bf24dbb930755a0284cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2712226520615222476}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802176162}
   m_Enabled: 1
@@ -2849,7 +2850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc9b4c9724a4454e8d9f719d32e4d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: IschigualastoIntro
 --- !u!114 &802176168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2882,7 +2882,7 @@ MonoBehaviour:
           m_MethodName: ObjectSeen
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 802176167}
+            m_ObjectArgument: {fileID: 802176164}
             m_ObjectArgumentAssemblyTypeName: Interactable, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -4020,6 +4020,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 749515232, guid: 9a549632d27d1ac4ab1ce2870662428e, type: 3}
+      propertyPath: sceneName
+      value: TalampayaIntro
+      objectReference: {fileID: 0}
     - target: {fileID: 7622237418244279592, guid: 9a549632d27d1ac4ab1ce2870662428e,
         type: 3}
       propertyPath: m_Name
@@ -4085,7 +4089,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 749515233, guid: 9a549632d27d1ac4ab1ce2870662428e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a549632d27d1ac4ab1ce2870662428e, type: 3}
 --- !u!1 &1078005548
 GameObject:
@@ -8838,6 +8843,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 802176167, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
+      propertyPath: sceneName
+      value: IschigualastoIntro
+      objectReference: {fileID: 0}
     - target: {fileID: 6831271795264041945, guid: c3dbd423c6f5bf24dbb930755a0284cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8903,7 +8912,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 802176168, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c3dbd423c6f5bf24dbb930755a0284cc, type: 3}
 --- !u!1001 &2840199575540750981
 PrefabInstance:

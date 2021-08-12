@@ -9,6 +9,7 @@ public class WindEvent : MonoBehaviour
     [SerializeField] ParticleSystem sandstorm;
     Animator playerAnimator;
     [SerializeField] FoxController fox;
+    bool gotToTheEnd = false;
 
     private void Start()
     {
@@ -19,20 +20,20 @@ public class WindEvent : MonoBehaviour
     IEnumerator RandomWindTiming(float time)
     {
         yield return new WaitForSeconds(time);
-
-        if (Random.Range(0, 100) < 50)
+        if (!gotToTheEnd)
         {
-            this.GetComponent<MOVER>().speed = 4;
-            playerAnimator.SetTrigger("WindSoundOn");
-            sandstorm.Play();
-            yield return new WaitForSeconds(time);
-            playerAnimator.SetTrigger("WindSoundOff");
-            this.GetComponent<MOVER>().speed = 13;
-            sandstorm.Stop();
+            if (Random.Range(0, 100) < 50)
+            {
+                this.GetComponent<MOVER>().speed = 4;
+                playerAnimator.SetTrigger("WindSoundOn");
+                sandstorm.Play();
+                yield return new WaitForSeconds(time);
+                playerAnimator.SetTrigger("WindSoundOff");
+                this.GetComponent<MOVER>().speed = 13;
+                sandstorm.Stop();
+            }
+            StartCoroutine(RandomWindTiming(time));
         }
-
-        StartCoroutine(RandomWindTiming(time));
-
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -47,6 +48,13 @@ public class WindEvent : MonoBehaviour
         {
             this.GetComponent<MOVER>().speed = 13;
             collision.GetComponent<BoxCollider>().enabled = false;
+        }
+        else if (collision.gameObject.CompareTag("WindStop"))
+        {
+            playerAnimator.SetTrigger("WindSoundOff");
+            this.GetComponent<MOVER>().speed = 13;
+            sandstorm.Stop();
+            gotToTheEnd = true;
         }
     }
 }
