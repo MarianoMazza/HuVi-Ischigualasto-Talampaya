@@ -13,10 +13,16 @@ public class LevelManager : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
     }
+
     public void ObjectiveTriggered()
     {
         objectivesTriggered++;
         if (this.objectivesTriggered >= objectivesCount)
             gameManager.LevelCompleted(levelNumber);
+    }
+
+    public int ObjectivesTriggered()
+    {
+        return this.objectivesTriggered;
     }
 }

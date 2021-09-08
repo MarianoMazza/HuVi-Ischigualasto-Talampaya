@@ -8,7 +8,6 @@ public class Gaze : MonoBehaviour
     public Animator animacion;
     public float myTime = 0f;
     public Transform radialPorgress;
-    public LevantarObjetos levantarObjetos;
     public bool gazeTimerUp = false;
     public GameObject text;
     Interactable seenObject;
@@ -24,13 +23,12 @@ public class Gaze : MonoBehaviour
 
     void Update()
     {
-            myTime += Time.deltaTime;
-            radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
-            if (myTime >= 2f && !gazeTimerUp)
-            {
-                Interact();
-                levantarObjetos.AnimarRobot();
-            }
+        myTime += Time.deltaTime;
+        radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
+        if (myTime >= 2f && !gazeTimerUp)
+        {
+            Interact();
+        }
     }
 
     void OnEnable()
@@ -58,6 +56,8 @@ public class Gaze : MonoBehaviour
             seenObject.Interact();
             fox.ObjectSeen(seenObject.gameObject);
         }
+        this.resetCounter();
+        this.enabled = false;
     }
 
     public void ObjectSeen(Interactable selectedInteractable)

@@ -88,9 +88,6 @@ public class SelectAvatar : MenuManager {
 		salio = 0;
 		PlayerPrefs.SetInt("avatarSelected", index);
 		fondoAvatarSeleccionado.SetActive (true);
-		efectos1.SetActive(false);
-		efectos2.SetActive (false);
-		efectos3.SetActive (false);
 		baseAvatar.SetActive (false);
 		canvas.enabled = !canvas.enabled;
 

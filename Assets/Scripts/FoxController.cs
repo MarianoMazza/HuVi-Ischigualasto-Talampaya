@@ -19,8 +19,11 @@ public class FoxController : Interactable
     [SerializeField] bool sitting;
     private void Start()
     {
-        currentTarget = targets[0].transform.position;
-        CalculateDistanceToObject();
+        if (targets.Count > 0)
+        {
+            currentTarget = targets[0].transform.position;
+            CalculateDistanceToObject();
+        }
     }
 
     void Update()
@@ -114,5 +117,10 @@ public class FoxController : Interactable
         speed = runningSpeed;
         animationName = "Run";
         this.GetComponent<Animator>().SetTrigger(animationName);
+    }
+
+    public List<GameObject> getTargets()
+    {
+        return targets;
     }
 }

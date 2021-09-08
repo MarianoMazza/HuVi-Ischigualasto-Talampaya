@@ -158,8 +158,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.1628394, y: 1.4981419, z: 1.8789084}
+  m_Center: {x: -0.11547597, y: -0.24907085, z: -0.118558034}
 --- !u!114 &802176167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: IschigualastoIntro
+  park: 
+  finalLevel: 0
 --- !u!114 &802176168
 MonoBehaviour:
   m_ObjectHideFlags: 0

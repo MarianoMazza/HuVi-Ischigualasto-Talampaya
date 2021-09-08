@@ -14,9 +14,9 @@ public class LoadVideoObject : MonoBehaviour {
 		video = GetComponent<VideoPlayer> ();
 		video.Prepare ();
 		video.Play ();
-		Debug.Log (PlayerPrefs.GetString ("Desafio"));
+		//Debug.Log (PlayerPrefs.GetString ("Desafio"));
 
-		StartCoroutine(delayVideo (time));
+		//StartCoroutine(delayVideo (time));
 
 	}
 

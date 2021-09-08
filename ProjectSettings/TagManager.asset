@@ -12,6 +12,8 @@ TagManager:
   - DinosaurStart
   - Objective
   - RouteReference
+  - DialogueTrigger
+  - WindStop
   layers:
   - Default
   - TransparentFX

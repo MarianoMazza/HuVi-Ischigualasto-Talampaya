@@ -12,6 +12,7 @@ public class InteractableWithSound : Interactable
     [SerializeField] float timeToAnimateNext;
     [SerializeField] GameObject rangerPosition;
     [SerializeField] GameObject ranger;
+   // [SerializeField] AudioSource music;
 
     [Header("Fox Settings")]
     [SerializeField] bool forceMoveFox;
@@ -21,21 +22,34 @@ public class InteractableWithSound : Interactable
 
     public override void Interact()
     {
-        if (rangerPosition != null)
-            ranger.transform.position = rangerPosition.transform.position;
+        RepositionRanger();
 
         Speak();
 
         if (gameObject.GetComponent<Animator>())
             gameObject.GetComponent<Animator>().enabled = true;
 
-        if (forceMoveFox)
-            fox.RemoveCurrentTarget();
+        StartCoroutine(MoveFoxAfterTime(timeToAnimateNext));
 
         if (forceRunFox)
             fox.Run();
 
         SpawnNextObject();
+        DisableThisCollider();
+    }
+
+    public void DisableThisCollider()
+    {
+        gameObject.GetComponent<Collider>().enabled = false;
+    }
+
+    public void RepositionRanger()
+    {
+        if (rangerPosition != null && ranger != null)
+        {
+            ranger.transform.position = new Vector3(rangerPosition.transform.position.x, ranger.transform.position.y, rangerPosition.transform.position.z);
+            ranger.transform.forward = new Vector3(rangerPosition.transform.forward.x, ranger.transform.forward.y, rangerPosition.transform.forward.z);
+        }
     }
 
     /* public int FindAudio(string audioName)
@@ -60,10 +74,20 @@ public class InteractableWithSound : Interactable
 
         }
     }
+
     IEnumerator AnimateAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
         nextObject.GetComponent<Animator>().enabled = true;
+    }
+
+    IEnumerator MoveFoxAfterTime(float time)
+    {
+        if (forceMoveFox)
+        {
+            yield return new WaitForSeconds(time);
+            fox.RemoveCurrentTarget();
+        }
     }
 
     public void AnimateNextObject()
@@ -73,21 +97,38 @@ public class InteractableWithSound : Interactable
 
     public void Speak()
     {
-        //Convert the string to the audioClip index
-
-        //int audioIndex = FindAudio(currentAudio);
-
-        // if (audioIndex != -1)
-        // {
-
-        //Assign the clip to play
-        if(audioSource.gameObject != this.gameObject)
+        if (dialogue != null)
+        {
             audioSource.clip = dialogue;
-
-        //Play
+        }
         audioSource.Play();
+       // music.volume = 0.03f;
+        //StartCoroutine(IncreaseMusicVolume(audioSource.clip.length));
+    }
 
-        // }
+    //IEnumerator IncreaseMusicVolume(float time)
+    //{
+   //     yield return new WaitForSeconds(time);
+   //    music.volume = 0.08f;
+   // }
 
+    public void SetDialogue(AudioClip _dialogue)
+    {
+        dialogue = _dialogue;
+    }
+
+    public AudioClip GetDialogue()
+    {
+        return dialogue;
+    }
+
+    public AudioSource GetAudioSource()
+    {
+        return audioSource;
+    }
+
+    public FoxController GetFox()
+    {
+        return fox;
     }
 }
