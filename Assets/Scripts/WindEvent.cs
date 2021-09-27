@@ -10,8 +10,8 @@ public class WindEvent : MonoBehaviour
     Animator playerAnimator;
     [SerializeField] FoxController fox;
     bool gotToTheEnd = false;
-    const int playerMaximumSpeed = 13;
-    const int playerMinimumSpeed = 6;
+    const int playerMaximumSpeed = 10;
+    const int playerMinimumSpeed = 8;
 
     private void Start()
     {

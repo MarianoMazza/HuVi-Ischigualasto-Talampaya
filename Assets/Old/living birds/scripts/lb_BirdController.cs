@@ -111,12 +111,6 @@ public class lb_BirdController : MonoBehaviour {
 		myBirds = new GameObject[maximumNumberOfBirds];
 		GameObject bird;
 		for(int i=0;i<myBirds.Length;i++){
-			if(highQuality){
-				bird = Resources.Load (myBirdTypes[Random.Range (0,myBirdTypes.Count)]+"HQ",typeof(GameObject)) as GameObject;
-			}else{
-				bird = Resources.Load (myBirdTypes[Random.Range (0,myBirdTypes.Count)],typeof(GameObject)) as GameObject;
-			}
-			myBirds[i] = Instantiate (bird,Vector3.zero,Quaternion.identity) as GameObject;
 			myBirds[i].transform.localScale = myBirds[i].transform.localScale*birdScale;
 			myBirds[i].transform.parent = transform;
 			myBirds[i].SendMessage ("SetController",this);
@@ -138,13 +132,8 @@ public class lb_BirdController : MonoBehaviour {
 			}
 		}
 
-		//instantiate 3 feather emitters for killing the birds
-		GameObject fEmitter = Resources.Load ("featherEmitter",typeof(GameObject)) as GameObject;
-		for(int i=0;i<3;i++){
-			featherEmitters[i] = Instantiate (fEmitter,Vector3.zero,Quaternion.identity) as GameObject;
-			featherEmitters[i].transform.parent = transform;
-			featherEmitters[i].SetActive (false);
-		}
+
+
 	}
 
 	void OnEnable(){
