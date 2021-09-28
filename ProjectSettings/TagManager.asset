@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - SignPosition
+  - WindStart
+  - Protection
+  - ThiefStart
+  - DinosaurStart
+  - Objective
+  - RouteReference
+  - DialogueTrigger
+  - WindStop
   layers:
   - Default
   - TransparentFX

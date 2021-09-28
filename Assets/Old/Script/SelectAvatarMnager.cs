@@ -75,9 +75,6 @@ IEnumerator delaySubtittle(float time)
 					Debug.LogError (filePath);
 					/////
 					canvas.enabled =true;
-					efectos1.SetActive(true);
-					efectos2.SetActive (true);
-					efectos3.SetActive(true);
 					baseAvatar.SetActive(true);
 					break;
 				}
