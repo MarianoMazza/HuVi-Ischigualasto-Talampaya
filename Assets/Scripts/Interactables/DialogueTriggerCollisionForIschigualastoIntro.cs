@@ -5,7 +5,8 @@ using UnityEngine;
 public class DialogueTriggerCollisionForIschigualastoIntro : InteractableWithSound
 {
     [SerializeField]
-    InteractableWithSound guardaparques;
+    InteractableWithSound ranger;
+
     [SerializeField]
     FoxController fox;
 
@@ -15,8 +16,8 @@ public class DialogueTriggerCollisionForIschigualastoIntro : InteractableWithSou
         {
             if (fox.getTargets().Count <= 1)
             {
-                guardaparques.SetDialogue(GetDialogue());
-                guardaparques.Speak();
+                ranger.SetDialogue(GetDialogue());
+                ranger.Speak();
                 SpawnNextObject();
             }
         }

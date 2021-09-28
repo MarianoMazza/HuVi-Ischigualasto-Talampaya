@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class InteractableAnimated : Interactable
 {
-    public override void Interact() {
+    public override void Interact()
+    {
         gameObject.GetComponent<Animator>().enabled = true;
     }
 }

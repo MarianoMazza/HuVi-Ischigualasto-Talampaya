@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class WindEvent : MonoBehaviour
 {
-    [SerializeField] AudioClip windSound;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] ParticleSystem sandstorm;
+    [SerializeField]
+    AudioClip windSound;
+
+    [SerializeField]
+    AudioSource audioSource;
+
+    [SerializeField]
+    ParticleSystem sandstorm;
+
+    [SerializeField]
+    FoxController fox;
+
     Animator playerAnimator;
-    [SerializeField] FoxController fox;
     bool gotToTheEnd = false;
     const int playerMaximumSpeed = 10;
     const int playerMinimumSpeed = 8;

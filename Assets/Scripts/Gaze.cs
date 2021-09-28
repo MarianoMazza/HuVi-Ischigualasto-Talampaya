@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class Gaze : MonoBehaviour
 {
+    [SerializeField]
+    FoxController fox;
+
+    [SerializeField]
+    LevelManager levelManager;
+
     public Animator animacion;
     public float myTime = 0f;
     public Transform radialPorgress;
@@ -12,16 +18,14 @@ public class Gaze : MonoBehaviour
     public GameObject text;
     Interactable seenObject;
     int interactableLayer = 8;
-    [SerializeField] FoxController fox;
-    [SerializeField] LevelManager levelManager;
 
-    void Start()
+    private void Start()
     {
         animacion = GetComponent<Animator>();
         radialPorgress.GetComponent<Image>().fillAmount = myTime;
     }
 
-    void Update()
+    private void Update()
     {
         myTime += Time.deltaTime;
         radialPorgress.GetComponent<Image>().fillAmount = myTime / 2;
@@ -31,7 +35,7 @@ public class Gaze : MonoBehaviour
         }
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         this.gameObject.GetComponent<MOVER>().enabled = false;
     }
@@ -47,12 +51,12 @@ public class Gaze : MonoBehaviour
     public void Interact()
     {
         gazeTimerUp = true;
-
         if (seenObject.gameObject.layer == interactableLayer)
         {
             if (seenObject.CompareTag("Objective"))
+            { 
                 levelManager.ObjectiveTriggered();
-
+            }
             seenObject.Interact();
             fox.ObjectSeen(seenObject.gameObject);
         }

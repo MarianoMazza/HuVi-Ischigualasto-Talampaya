@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class DinosaurEvent : MonoBehaviour
 {
-    [SerializeField] GameObject leg;
-    [SerializeField] GameObject arm;
-    [SerializeField] GameObject skull;
-    [SerializeField] GameObject player;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] FoxController fox;
+    [SerializeField]
+    GameObject leg;
+
+    [SerializeField]
+    GameObject arm;
+
+    [SerializeField]
+    GameObject skull;
+
+    [SerializeField]
+    GameObject player;
+
+    [SerializeField]
+    AudioSource audioSource;
+
+    [SerializeField]
+    FoxController fox;
 
     private void OnTriggerEnter(Collider collision)
     {

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class ThiefScript : InteractableWithSound
 {
-    [SerializeField] string animationName;
-    [SerializeField] GameObject thief;
+    [SerializeField]
+    string animationName;
+
+    [SerializeField]
+    GameObject thief;
 
     public override void Interact()
     {

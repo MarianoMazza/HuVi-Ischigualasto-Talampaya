@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTriggerCollisionForGarden : InteractableWithSound
 {
     [SerializeField]
-    InteractableWithSound guardaparques;
+    InteractableWithSound ranger;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -22,8 +22,8 @@ public class DialogueTriggerCollisionForGarden : InteractableWithSound
             }
             if (objectivesCount == 0)
             {
-                guardaparques.SetDialogue(GetDialogue());
-                guardaparques.Speak();
+                ranger.SetDialogue(GetDialogue());
+                ranger.Speak();
                 SpawnNextObject();
                 DisableThisCollider();
             }

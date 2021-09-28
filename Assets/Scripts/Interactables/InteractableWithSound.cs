@@ -4,36 +4,45 @@ using UnityEngine;
 
 public class InteractableWithSound : Interactable
 {
-    //[SerializeField] AudioClip[] speech;
-    [SerializeField] AudioClip dialogue;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] GameObject nextObject;
-    [SerializeField] bool activateNextAnimation;
-    [SerializeField] float timeToAnimateNext;
-    [SerializeField] GameObject rangerPosition;
-    [SerializeField] GameObject ranger;
-   // [SerializeField] AudioSource music;
+    [SerializeField]
+    AudioClip dialogue;
+
+    [SerializeField]
+    AudioSource audioSource;
+
+    [SerializeField]
+    GameObject nextObject;
+
+    [SerializeField]
+    bool activateNextAnimation;
+
+    [SerializeField]
+    float timeToAnimateNext;
+
+    [SerializeField]
+    GameObject rangerPosition;
+
+    [SerializeField]
+    GameObject ranger;
 
     [Header("Fox Settings")]
     [SerializeField] bool forceMoveFox;
     [SerializeField] bool forceRunFox;
     [SerializeField] FoxController fox;
-    //string currentAudio;
 
     public override void Interact()
     {
         RepositionRanger();
-
         Speak();
-
         if (gameObject.GetComponent<Animator>())
+        {
             gameObject.GetComponent<Animator>().enabled = true;
-
+        }
         StartCoroutine(MoveFoxAfterTime(timeToAnimateNext));
-
         if (forceRunFox)
+        {
             fox.Run();
-
+        }
         SpawnNextObject();
         DisableThisCollider();
     }
@@ -52,26 +61,15 @@ public class InteractableWithSound : Interactable
         }
     }
 
-    /* public int FindAudio(string audioName)
-     {
-         for (int i = 0; i < speech.Length; i++)
-         {
-             if (speech[i].name == audioName)
-             {
-                 return i;
-             }
-         }
-         return -1;
-     }*/
-
     public void SpawnNextObject()
     {
         if (nextObject != null)
         {
             nextObject.SetActive(true);
             if (nextObject.GetComponent<Animator>() && activateNextAnimation)
+            {
                 StartCoroutine(AnimateAfterTime(timeToAnimateNext));
-
+            }
         }
     }
 
@@ -102,15 +100,7 @@ public class InteractableWithSound : Interactable
             audioSource.clip = dialogue;
         }
         audioSource.Play();
-       // music.volume = 0.03f;
-        //StartCoroutine(IncreaseMusicVolume(audioSource.clip.length));
     }
-
-    //IEnumerator IncreaseMusicVolume(float time)
-    //{
-   //     yield return new WaitForSeconds(time);
-   //    music.volume = 0.08f;
-   // }
 
     public void SetDialogue(AudioClip _dialogue)
     {

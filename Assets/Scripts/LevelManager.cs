@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] int levelNumber;
-    [SerializeField] int objectivesCount;
-    private int objectivesTriggered = 0;
+    [SerializeField]
+    int levelNumber;
+
+    [SerializeField]
+    int objectivesCount;
+
+    int objectivesTriggered = 0;
     GameManager gameManager;
 
     private void Awake()
@@ -18,7 +22,9 @@ public class LevelManager : MonoBehaviour
     {
         objectivesTriggered++;
         if (this.objectivesTriggered >= objectivesCount)
+        { 
             gameManager.LevelCompleted(levelNumber);
+        }
     }
 
     public int ObjectivesTriggered()

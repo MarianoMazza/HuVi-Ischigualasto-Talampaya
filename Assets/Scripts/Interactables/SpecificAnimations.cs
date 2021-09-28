@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SpecificAnimations : InteractableWithSound
 {
-    [SerializeField] string animationName;
-    [SerializeField] GameObject AnimatedObject;
+    [SerializeField]
+    string animationName;
+
+    [SerializeField]
+    GameObject AnimatedObject;
 
     public override void Interact()
     {

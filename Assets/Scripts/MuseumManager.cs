@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class MuseumManager : MonoBehaviour
 {
-    [SerializeField] GameObject light1, light2, light3;
-    [SerializeField] AudioClip dialogue;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] GameObject sign;
-    [SerializeField] GameObject dinosaurCollider;
+    [SerializeField]
+    GameObject light1, light2, light3;
 
-    // Update is called once per frame
+    [SerializeField]
+    AudioClip dialogue;
+
+    [SerializeField]
+    AudioSource audioSource;
+
+    [SerializeField]
+    GameObject sign;
+
+    [SerializeField]
+    GameObject dinosaurCollider;
+
     void Update()
     {
         if (light1.activeSelf && light2.activeSelf && light3.activeSelf) 
         {
-           // audioSource.clip = dialogue;
-            //audioSource.Play();
             sign.SetActive(true);
             dinosaurCollider.SetActive(true);
         }

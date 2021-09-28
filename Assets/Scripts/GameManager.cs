@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    bool visitedTalampaya = false;
+
+    [SerializeField]
+    bool visitedIschigualasto = false;
+
     bool[] completed = new bool[7];
     bool[] collectiblesTalampaya = new bool[5];
     bool[] collectiblesIschigualasto = new bool[5];
     bool allObjectivesAchieved = false;
-    [SerializeField]
-    bool visitedTalampaya = false;
-    [SerializeField]
-    bool visitedIschigualasto = false;
     CollectiblesSign collectiblesSign;
     const string videoTalampaya = "360Talampaya";
     const string videoIschigualasto = "360Ischigualasto";
@@ -27,7 +29,6 @@ public class GameManager : MonoBehaviour
             Destroy(_instance.gameObject);
         }
         _instance = this;
-
         DontDestroyOnLoad(this.gameObject);
         completed[1] = true; //Talampaya Canyon is completed by default  
     }

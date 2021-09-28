@@ -5,18 +5,25 @@ using UnityEngine;
 [SelectionBase]
 public class FoxController : Interactable
 {
-    float speed = 7.0f;
     [SerializeField]
     float walkingSpeed = 3;
+
     [SerializeField]
     float runningSpeed = 7;
+
+    [SerializeField]
+    List<GameObject> targets;
+
+    [SerializeField]
+    bool sitting;
+
+    float speed = 7.0f;
     float step;
-    [SerializeField] List<GameObject> targets;
     Vector3 currentTarget;
     string animationName = "Sit";
     bool forceRun;
     bool roam;
-    [SerializeField] bool sitting;
+
     private void Start()
     {
         if (targets.Count > 0)
@@ -26,7 +33,7 @@ public class FoxController : Interactable
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (!sitting)
         {
@@ -63,7 +70,9 @@ public class FoxController : Interactable
         {
             targets.Remove(seenObject);
             if (targets.Count > 0)
+            {
                 currentTarget = targets[0].transform.position;
+            }
         }
         CalculateDistanceToObject();
     }

@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class InteractableSceneChange : Interactable
 {
-    [SerializeField] string sceneName;
-    [SerializeField] string park;
-    [SerializeField] bool finalLevel;
+    [SerializeField]
+    string sceneName;
+
+    [SerializeField]
+    string park;
+
+    [SerializeField]
+    bool finalLevel;
+
     GameManager gameManager;
 
     private void Awake()

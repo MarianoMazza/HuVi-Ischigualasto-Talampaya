@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class VideoManager : MonoBehaviour
 {
-    GameManager gameManager;
-    const string gameEnding = "Ending";
     [SerializeField]
     string sceneName;
+
     [SerializeField]
     int timeToNextScene;
+
+    GameManager gameManager;
+    const string gameEnding = "Ending";
 
     private void Awake()
     {

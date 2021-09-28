@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class QuestionsScript : InteractableWithSound
 {
-    [SerializeField] string animationName;
-    [SerializeField] QuestionsScript question;
-    [SerializeField] GameObject nextQuestion;
-    [SerializeField] GameObject answers;
-    [SerializeField] int timeToNextQuestion;
-    [SerializeField] bool amIFinalQuestion;
-    [SerializeField] GameObject finalCollider;
+    [SerializeField]
+    string animationName;
+
+    [SerializeField]
+    QuestionsScript question;
+
+    [SerializeField]
+    GameObject nextQuestion;
+
+    [SerializeField]
+    GameObject answers;
+
+    [SerializeField]
+    int timeToNextQuestion;
+
+    [SerializeField]
+    bool amIFinalQuestion;
+
+    [SerializeField]
+    GameObject finalCollider;
+
     [SerializeField]
     AudioClip dialogueIfLastQuestion;
 
