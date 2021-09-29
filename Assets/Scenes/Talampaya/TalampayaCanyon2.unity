@@ -2461,11 +2461,11 @@ MonoBehaviour:
   activateNextAnimation: 0
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
-  ranger: {fileID: 0}
+  ranger: {fileID: 1846002700}
   forceMoveFox: 0
   forceRunFox: 0
-  fox: {fileID: 0}
-  guardaparques: {fileID: 1846002704}
+  fox: {fileID: 1511049934}
+  rangerInteractable: {fileID: 1846002704}
 --- !u!23 &825565082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3736,8 +3736,8 @@ MonoBehaviour:
   ranger: {fileID: 1846002700}
   forceMoveFox: 0
   forceRunFox: 0
-  fox: {fileID: 0}
-  guardaparques: {fileID: 1846002704}
+  fox: {fileID: 1511049934}
+  rangerInteractable: {fileID: 1846002704}
 --- !u!23 &1423937160
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5969,13 +5969,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d7d93197eac19459702acec0267369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fox: {fileID: 1511049934}
+  levelManager: {fileID: 620822578}
   animacion: {fileID: 3686092144610791011}
   myTime: 0
   radialPorgress: {fileID: 3686092144302913042}
   gazeTimerUp: 0
   text: {fileID: 0}
-  fox: {fileID: 1511049934}
-  levelManager: {fileID: 620822578}
 --- !u!95 &3686092144610791011
 Animator:
   serializedVersion: 3

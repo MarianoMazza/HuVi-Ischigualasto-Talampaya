@@ -7583,11 +7583,11 @@ MonoBehaviour:
   activateNextAnimation: 0
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
-  ranger: {fileID: 0}
+  ranger: {fileID: 151120656}
   forceMoveFox: 0
   forceRunFox: 0
   fox: {fileID: 1511049934}
-  guardaparques: {fileID: 151120655}
+  rangerInteractable: {fileID: 151120655}
 --- !u!23 &1158029864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8959,11 +8959,11 @@ MonoBehaviour:
   activateNextAnimation: 0
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
-  ranger: {fileID: 0}
+  ranger: {fileID: 151120656}
   forceMoveFox: 0
   forceRunFox: 0
-  fox: {fileID: 0}
-  guardaparques: {fileID: 151120655}
+  fox: {fileID: 1511049934}
+  rangerInteractable: {fileID: 151120655}
 --- !u!23 &1405137403
 MeshRenderer:
   m_ObjectHideFlags: 0

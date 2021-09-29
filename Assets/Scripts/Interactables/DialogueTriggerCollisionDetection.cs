@@ -5,14 +5,14 @@ using UnityEngine;
 public class DialogueTriggerCollisionDetection : InteractableWithSound
 {
     [SerializeField]
-    InteractableWithSound ranger;
+    InteractableWithSound rangerInteractable;
  
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            ranger.SetDialogue(this.GetDialogue());
-            ranger.Speak();
+            rangerInteractable.SetDialogue(this.GetDialogue());
+            rangerInteractable.Speak();
             SpawnNextObject();
             RepositionRanger();
             DisableThisCollider();

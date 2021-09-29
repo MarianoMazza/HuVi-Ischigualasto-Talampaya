@@ -168,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 6904265674844121792, guid: 1a2b2286c13d63d4aa0fda36fba6c9b1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 6904265674844121792, guid: 1a2b2286c13d63d4aa0fda36fba6c9b1,
         type: 3}
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 734897344560553170, guid: 128a05f5c8ce4e84ca2160d027a31ca2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 734897344560553170, guid: 128a05f5c8ce4e84ca2160d027a31ca2,
         type: 3}
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 8300000, guid: fb92a04a208ce3a4eab33ee300821e60, type: 3}
-  audioSource: {fileID: 513935216}
+  audioSource: {fileID: 1846002705}
   nextObject: {fileID: 0}
   activateNextAnimation: 0
   timeToAnimateNext: 0
@@ -4428,12 +4428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc690b037c621149a643ee403449352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &513935216 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2825570334330313400, guid: 24d35d0ccc52508478d42f38dbf9fc6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2108894348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &519740306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4507,7 +4501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4188331867383602, guid: d2d67fda15fa26342932fffde03aeb05, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4188331867383602, guid: d2d67fda15fa26342932fffde03aeb05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4753,7 +4747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 204ef55864c1e9140ac2474c00ff2d9b, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 204ef55864c1e9140ac2474c00ff2d9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5117,11 +5111,11 @@ MonoBehaviour:
   activateNextAnimation: 0
   timeToAnimateNext: 0
   rangerPosition: {fileID: 0}
-  ranger: {fileID: 0}
+  ranger: {fileID: 1846002700}
   forceMoveFox: 1
   forceRunFox: 0
-  fox: {fileID: 0}
-  guardaparques: {fileID: 1846002704}
+  fox: {fileID: 1511049934}
+  rangerInteractable: {fileID: 1846002704}
 --- !u!114 &620822578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6238,7 +6232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4188331867383602, guid: d2d67fda15fa26342932fffde03aeb05, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4188331867383602, guid: d2d67fda15fa26342932fffde03aeb05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11548,7 +11542,7 @@ PrefabInstance:
     - target: {fileID: 6236685123849691291, guid: 3b516293fdbfd8b489a50e91c38bd32e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6236685123849691291, guid: 3b516293fdbfd8b489a50e91c38bd32e,
         type: 3}
@@ -16657,13 +16651,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d7d93197eac19459702acec0267369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fox: {fileID: 1511049934}
+  levelManager: {fileID: 620822580}
   animacion: {fileID: 3686092144610791011}
   myTime: 0
   radialPorgress: {fileID: 3686092144302913042}
   gazeTimerUp: 0
   text: {fileID: 0}
-  fox: {fileID: 1511049934}
-  levelManager: {fileID: 620822580}
 --- !u!114 &3686092144610791009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16676,13 +16670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35acbeadfd3456146af6b899d7443519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carrying: 0
-  distance: 1.5
-  smooth: 20
-  x: 0.3
-  y: 0.3
-  z: 0.1
-  manager: {fileID: 0}
 --- !u!114 &3686092144610791010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16695,12 +16682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d62f4140d220d4787910decaa784c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 2
-  sorpresa: {fileID: 0}
-  robotRoot: {fileID: 0}
-  camara: {fileID: 3686092144785043852}
-  robot: {fileID: 0}
-  puertaInicial: {fileID: 0}
 --- !u!95 &3686092144610791011
 Animator:
   serializedVersion: 3
