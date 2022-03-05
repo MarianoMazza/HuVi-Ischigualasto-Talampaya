@@ -3,7 +3,7 @@
 Educational VR mobile game called HuVi: Ischigualasto - Talampaya.
 **If you want to see the code or scripts created and used for this game please go to Assets-> Scripts.**
 
-In this game, the player walks around 3D recreations of the parks Ischigualasto and Talampaya, located in Argentina. On this tour, the player solves puzzles and unlocks narrated explanations, images, and 360 videos of these places.
+In this game, the player walks around 3D recreations of the parks Ischigualasto and Talampaya, located in Argentina. On this tour, the player solves puzzles and unlocks narrated explanations, images, and 360 videos of these places. Also, a fox travels with the player. This companion is there to indicate what the next objective is.
 
 Game created in collaboration with the UNLP (Universidad Nacional de La Plata), to be used in educational workshops.
 
